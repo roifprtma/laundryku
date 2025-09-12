@@ -1,179 +1,181 @@
-<!DOCTYPE html>
-<html lang="id">
+<php>
+    <!DOCTYPE html>
+    <html lang="id">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        LaundryKu
-    </title>
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        /* Bar atas */
-        
-        .top-bar {
-            background-color: #2599ec;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 8px;
-            font-size: 14px;
-        }
-        
-        .top-bar button {
-            background: white;
-            border: 1px solid black;
-            padding: 6px 12px;
-            margin-left: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        
-        .top-bar button:hover {
-            background: #2599ec;
-            color: white;
-        }
-        /* Navigasi utama */
-        
-        .logolaundryku img {
-            max-width: 200px;
-            border-radius: 10px;
-        }
-        
-        .navbar {
-            background-color: #1b61b1;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-        }
-        
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
-        
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-        /*tampilan awal*/
-        
-        .hero {
-            background-color: #1b61b1;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-            flex-wrap: wrap;
-        }
-        
-        .hero-text {
-            max-width: 50%;
-        }
-        
-        .hero-text h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        
-        .hero-text button {
-            background: transparent;
-            border: 1px solid white;
-            padding: 10px 20px;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-        
-        .hero-text button:hover {
-            background: white;
-            color: #1b61b1;
-        }
-        
-        .produklaundry img {
-            max-width: 1000px;
-            border-radius: 10px;
-        }
-        
-        .card {
-            height: 50px;
-            width: 50px;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            LaundryKu
+        </title>
+        <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            /* Bar atas */
+            
+            .top-bar {
+                background-color: #2599ec;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px;
+                font-size: 14px;
+            }
+            
+            .top-bar button {
+                background: white;
+                border: 1px solid black;
+                padding: 6px 12px;
+                margin-left: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+            
+            .top-bar button:hover {
+                background: #2599ec;
+                color: white;
+            }
+            /* Navigasi utama */
+            
+            .logolaundryku img {
+                max-width: 200px;
+                border-radius: 10px;
+            }
+            
+            .navbar {
+                background-color: #1b61b1;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+            }
+            
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+                font-weight: bold;
+            }
+            
+            .navbar a:hover {
+                text-decoration: underline;
+            }
+            /*tampilan awal*/
+            
+            .hero {
+                background-color: #1b61b1;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 50px;
+                flex-wrap: wrap;
+            }
+            
+            .hero-text {
+                max-width: 50%;
+            }
+            
+            .hero-text h1 {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            
+            .hero-text button {
+                background: transparent;
+                border: 1px solid white;
+                padding: 10px 20px;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 16px;
+                transition: 0.3s;
+            }
+            
+            .hero-text button:hover {
+                background: white;
+                color: #1b61b1;
+            }
+            
+            .produklaundry img {
+                max-width: 1000px;
+                border-radius: 10px;
+            }
+            
+            .card {
+                height: 50px;
+                width: 50px;
+            }
+        </style>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Bar atas -->
-    <div class=" top-bar ">
-        <span>Butuh Laundry Cepat?</span>
-        <button onclick="pesanSekarang() ">Pesan Sekarang!</button>
-    </div>
-
-    <!-- Navigasi -->
-    <div class="navbar ">
-        <div class="logolaundryku ">
-            <image src="image/logolaundryku2.png " alt="Laundry Items ">
+        <!-- Bar atas -->
+        <div class=" top-bar ">
+            <span>Butuh Laundry Cepat?</span>
+            <button onclick="pesanSekarang() ">Pesan Sekarang!</button>
         </div>
-        <div class="menu ">
-            <a href="# ">BERANDA</a>
-            <a href="# ">PESANAN</a>
-            <a href="# ">KEMITRAAN</a>
-            <a href="# ">TESTIMONI</a>
-            <a href="formlogin.php ">LOGIN</a>
-        </div>
-    </div>
 
-    <!-- Hero Section -->
-    <div class=" hero ">
-        <div class="hero-text ">
-            <h1>
-                Selamat datang di web kami
-                <br> #1 Laundry terbaik se indonesia <br> Solusi Terbaik Untuk Keluarga dan Orang Tua
-            </h1>
-            <button onclick="hubungiKami() "> <a
+        <!-- Navigasi -->
+        <div class="navbar ">
+            <div class="logolaundryku ">
+                <image src="image/logolaundryku2.png " alt="Laundry Items ">
+            </div>
+            <div class="menu ">
+                <a href="# ">BERANDA</a>
+                <a href="# ">PESANAN</a>
+                <a href="">KEMITRAAN</a>
+                <a href="testimoni.php">TESTIMONI</a>
+                <a href="formlogin.php ">LOGIN</a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class=" hero ">
+            <div class="hero-text ">
+                <h1>
+                    Selamat datang di web kami
+                    <br> #1 Laundry terbaik se indonesia <br> Solusi Terbaik Untuk Keluarga dan Orang Tua
+                </h1>
+                <button onclick="hubungiKami() "> <a
                         href="tampilanWA.php "></a><b>📞 Hubungi segera</b></button>
+            </div>
+            <div class="produklaundry ">
+                <image src="image/fotoproduk.png " alt="Laundry Items ">
+            </div>
         </div>
-        <div class="produklaundry ">
-            <image src="image/fotoproduk.png " alt="Laundry Items ">
+        <div class="card" style="width: 18rem;">
+            <img src="image/laundryku5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            </div>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="image/laundryku5.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+        <div class="card" style="width: 18rem;">
+            <img src="image/laundryku5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            </div>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="image/laundryku5.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+        <!--untuk pindah ke wa -->
         </div>
-    </div>
-    <!--untuk pindah ke wa -->
-    </div>
 
-    <!-- <script>
+        <!-- <script>
         function pesanSekarang() {
             window.location.href = "tampilanWA.php ";
         } -->
 
-    <!-- // function hubungiKami() { // alert("Menghubungkan ke WhatsApp Customer Service... "); // window.location.href = "Pesananlaundry.php "; // } -->
-    <!-- </script> -->
+        <!-- // function hubungiKami() { // alert("Menghubungkan ke WhatsApp Customer Service... "); // window.location.href = "Pesananlaundry.php "; // } -->
+        <!-- </script> -->
 
 
-</body>
+    </body>
 
-</html>
+    </html>
+</php>

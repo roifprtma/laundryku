@@ -87,7 +87,7 @@
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Masuk</button>
             </form>
-            <p>Belum punya akun? <a href="daftar.php">Daftar</a></p>
+            <p>Belum punya akun? <a href="daftar.php">Segera daftar</a></p>
         </div>
     </body>
 
