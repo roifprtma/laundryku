@@ -142,7 +142,7 @@
       <div class="profile">
         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Pelanggan">
         <div>
-          <h3>Sinta Wulandari</h3>
+          <h3>SandiMaharani</h3>
           <span>Mahasiswa</span>
         </div>
       </div>
@@ -157,8 +157,8 @@
       <div class="profile">
         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Pelanggan">
         <div>
-          <h3>Sinta Wulandari</h3>
-          <span>Mahasiswa</span>
+          <h3>Megawati</h3>
+          <span>Ketua partai PDIP</span>
         </div>
       </div>
       <p>
