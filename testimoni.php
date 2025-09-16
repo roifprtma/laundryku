@@ -10,7 +10,7 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f6fa;
+      background: #9cb5e7ff;
       color: #333;
     }
 
@@ -94,7 +94,7 @@
     <div class="testimoni-card">
       <span class="quote">“</span>
       <div class="profile">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Pelanggan">
+        <img src="image/wulandari.jpg" alt="Foto Pelanggan">
         <div>
           <h3>Sinta Wulandari</h3>
           <span>Mahasiswa</span>
@@ -110,7 +110,7 @@
     <div class="testimoni-card">
       <span class="quote">“</span>
       <div class="profile">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto Pelanggan">
+        <img src="image/BudiSantoso.jpg" alt="Foto Pelanggan">
         <div>
           <h3>Budi Santoso</h3>
           <span>Karyawan Swasta</span>
@@ -126,7 +126,7 @@
     <div class="testimoni-card">
       <span class="quote">“</span>
       <div class="profile">
-        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto Pelanggan">
+        <img src="image/dewi.jpeg" alt="Foto Pelanggan">
         <div>
           <h3>Dewi Anggraini</h3>
           <span>Wirausaha</span>
@@ -141,7 +141,7 @@
     <div class="testimoni-card">
       <span class="quote">“</span>
       <div class="profile">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Pelanggan">
+        <img src="image/maharani.jpg" alt="Foto Pelanggan">
         <div>
           <h3>SandiMaharani</h3>
           <span>Mahasiswa</span>
@@ -156,7 +156,7 @@
     <div class="testimoni-card">
       <span class="quote">“</span>
       <div class="profile">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Pelanggan">
+        <img src="image/megawati.jpg" alt="Foto Pelanggan">
         <div>
           <h3>Megawati</h3>
           <span>Ketua partai PDIP</span>
@@ -172,7 +172,7 @@
     <div class="testimoni-card">
       <span class="quote">“</span>
       <div class="profile">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Pelanggan">
+        <img src="image/PuanMaharani.jpg" alt="Foto Pelanggan">
         <div>
           <h3>Puan Maharani</h3>
           <span>Ketua DPR Ri </span>

@@ -45,7 +45,7 @@ if (isset($_POST['update'])) {
 <head>
     <title>Update Data Pelanggan</title>
     <style>
-        body {font-family: Arial; margin: 20px;}
+        body {font-family: Arial; margin: 10px;}
         form {max-width: 400px; margin: auto;}
         label {display: block; margin-top: 10px;}
         input {width: 100%; padding: 8px; margin-top: 5px;}
