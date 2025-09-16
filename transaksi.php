@@ -36,7 +36,7 @@ $result = mysqli_query($conn, $query);
         <th>Tgl Pesan</th>
         <th>Estimasi</th>
         <th>Status</th>
-        <th>Aksi</th>
+        <th>update</th>
       </tr>
     </thead>
     <tbody>
