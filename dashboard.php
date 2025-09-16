@@ -39,7 +39,7 @@
     <div class="sidebar" id="sidebar">
         <a href="LaundryKu.html">🏠 Home</a>
         <a href="pelanggan.php">👥 Data Pelanggan</a>
-        <a href="transaksi.php">💰 Data Transaksi</a>
+        <a href="transaksiadmin.php">💰 Data Transaksi</a>
         <a href="logout.php">🚪 Logout</a>
     </div>
     <div class="content" id="content">
