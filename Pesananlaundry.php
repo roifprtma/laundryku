@@ -34,7 +34,7 @@ $result = mysqli_query($conn, $query);
         <th>Berat (Kg)</th>
         <th>Total (Rp)</th>
         <th>Tgl Pesan</th>
-        <th>Estimasi</th>
+        <th>no telepon</th>
         <th>Status</th>
         <th>Aksi</th>
       </tr>
@@ -48,14 +48,13 @@ $result = mysqli_query($conn, $query);
               echo "<td>".$no++."</td>";
               echo "<td>".$row['nama_pelanggan']."</td>";
               echo "<td>".$row['layanan']."</td>";
-              echo "<td>".$row['Berat']."</td>";
+              echo "<td>".$row['berat']."</td>";
               echo "<td>".number_format($row['total'],0,',','.')."</td>";
               echo "<td>".$row['tgl_pesanan']."</td>";
-              echo "<td><span class='badge bg-primary'>".$row['estimasi']."</span></td>";
+                echo "<td>".$row['telepon']."</td>";
               echo "<td>".$row['status']."</td>";
               echo"<td>
-                      <a href='detail.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-info'>Detail</a>
-                      <a href='edit.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-warning'>Edit</a>
+                      <a href='updatepesanan.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-warning'>Edit</a>
                       <a href='hapus.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-danger' onclick='return confirm(\"Yakin hapus pesanan ini?\")'>Hapus</a>
                     </td>";
               echo "</tr>";
