@@ -64,9 +64,7 @@
           <label for="layanan" class="form-label">Jenis Layanan</label>
           <select class="form-select" id="layanan" name="layanan" required>
             <option value="">Pilih Layanan</option>
-            <option value="Cuci Kering">Cuci Kering</option>
-            <option value="Cuci Setrika">Cuci + Setrika</option>
-            <option value="Setrika Saja">Setrika Saja</option>
+            <option value="reguler">Reguler (2-3 hari)</option>
             <option value="Express">Express (1 Hari)</option>
           </select>
         </div>

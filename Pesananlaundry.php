@@ -8,7 +8,7 @@ if (!$conn) {
 }
 
 // Ambil data pesanan
-$query = "SELECT * FROM layananlaundry ORDER BY id_pesanan DESC";
+$query = "SELECT * FROM layananlaundry ";
 $result = mysqli_query($conn, $query);
 ?>
 
@@ -36,7 +36,7 @@ $result = mysqli_query($conn, $query);
         <th>Tgl Pesan</th>
         <th>no telepon</th>
         <th>Status</th>
-        <th>Aksi</th>
+    
       </tr>
     </thead>
     <tbody>
@@ -53,11 +53,7 @@ $result = mysqli_query($conn, $query);
               echo "<td>".$row['tgl_pesanan']."</td>";
                 echo "<td>".$row['telepon']."</td>";
               echo "<td>".$row['status']."</td>";
-              echo"<td>
-                      <a href='updatepesanan.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-warning'>Edit</a>
-                      <a href='hapus.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-danger' onclick='return confirm(\"Yakin hapus pesanan ini?\")'>Hapus</a>
-                    </td>";
-              echo "</tr>";
+             
           }
       } else {
           echo "<tr><td colspan='9'>Belum ada pesanan</td></tr>";

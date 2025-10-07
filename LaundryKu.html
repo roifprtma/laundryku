@@ -1,297 +1,298 @@
-<php>
-    <!DOCTYPE html>
-    <html lang="id">
+<!DOCTYPE html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            LaundryKu
-        </title>
-        <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-        <style>
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-            }
-            /* Bar atas */
-            
-            .top-bar {
-                background-color: #2599ec;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 8px;
-                font-size: 14px;
-            }
-            
-            .top-bar button {
-                background: white;
-                border: 1px solid black;
-                padding: 6px 12px;
-                margin-left: 10px;
-                cursor: pointer;
-                border-radius: 5px;
-                transition: 0.3s;
-            }
-            
-            .top-bar button:hover {
-                background: #2599ec;
-                color: white;
-            }
-            /* Navigasi utama */
-            
-            .logolaundryku img {
-                max-width: 200px;
-                border-radius: 10px;
-            }
-            
-            .navbar {
-                background-color: #1b61b1;
-                color: white;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 15px 30px;
-            }
-            
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                margin-left: 20px;
-                font-weight: bold;
-            }
-            
-            .navbar a:hover {
-                text-decoration: underline;
-            }
-            /*tampilan awal*/
-            
-            .hero {
-                background-color: #1b61b1;
-                color: white;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 50px;
-                flex-wrap: wrap;
-            }
-            
-            .hero-text {
-                max-width: 50%;
-            }
-            
-            .hero-text h1 {
-                font-size: 36px;
-                font-weight: bold;
-                margin-bottom: 20px;
-            }
-            
-            .hero-text button {
-                background: transparent;
-                border: 1px solid white;
-                padding: 10px 20px;
-                color: white;
-                cursor: pointer;
-                border-radius: 5px;
-                font-size: 16px;
-                transition: 0.3s;
-            }
-            
-            .hero-text button:hover {
-                background: white;
-                color: #1b61b1;
-            }
-            
-            .produklaundry img {
-                max-width: 1000px;
-                border-radius: 10px;
-            }
-            
-            .card {
-                transition: transform 0.18s ease, box-shadow 0.18s ease;
-            }
-            
-            .card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 10px 30px rgba(13, 110, 253, 0.12);
-                border: 5px solid rgba(13, 110, 253, 0.25);
-                border-color: rgba(13, 110, 253, 0.25);
-                box-sizing: border-box;
-            }
-            
-            .card-text {
-                font-size: 14px;
-                color: #555;
-                overflow: scroll;
-                height: 50px;
-            }
-        </style>
-    </head>
+<html lang="id">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        LaundryKu
+    </title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Bar atas */
+        
+        .top-bar {
+            background-color: #2599ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            font-size: 14px;
+        }
+        
+        .top-bar button {
+            background: white;
+            border: 1px solid black;
+            padding: 6px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        
+        .top-bar button:hover {
+            background: #2599ec;
+            color: white;
+        }
+        /* Navigasi utama */
+        
+        .logolaundryku img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        
+        .navbar {
+            background-color: #1b61b1;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        /*tampilan awal*/
+        
+        .hero {
+            background-color: #1b61b1;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-text {
+            max-width: 50%;
+        }
+        
+        .hero-text h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero-text button {
+            background: transparent;
+            border: 1px solid white;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        
+        .hero-text button:hover {
+            background: white;
+            color: #1b61b1;
+        }
+        
+        .produklaundry img {
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+        
+        .card {
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(13, 110, 253, 0.12);
+            border: 5px solid rgba(13, 110, 253, 0.25);
+            border-color: rgba(13, 110, 253, 0.25);
+            box-sizing: border-box;
+        }
+        
+        .card-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
 
-        <!-- Bar atas -->
-        <div class=" top-bar ">
-            <span>Butuh Laundry Cepat?</span>
-            <button onclick="pesanSekarang() ">Pesan Sekarang!</button>
+<body>
+
+    <!-- Bar atas -->
+    <div class=" top-bar ">
+        <span>Butuh Laundry Cepat?</span>
+        <button onclick="pesanSekarang() ">Pesan Sekarang!</button>
+    </div>
+
+    <!-- Navigasi -->
+    <div class="navbar ">
+        <div class="logolaundryku ">
+            <image src="image/logolaundryku2.png " alt="Laundry Items ">
         </div>
+        <div class="menu ">
 
-        <!-- Navigasi -->
-        <div class="navbar ">
-            <div class="logolaundryku ">
-                <image src="image/logolaundryku2.png " alt="Laundry Items ">
-            </div>
-            <div class="menu ">
+            <a href="Pesananlaundry.php">PESANAN</a>
+            <a href="kemitraan.php">KEMITRAAN</a>
+            <a href="testimoni.php">TESTIMONI</a>
+            <a href="formlogin.php">Login</a>
 
-                <a href="Pesananlaundry.php">PESANAN</a>
-                <a href="kemitraan.php">KEMITRAAN</a>
-                <a href="testimoni.php">TESTIMONI</a>
-                <a href="formlogin.php ">LOGIN</a>
-            </div>
         </div>
+    </div>
 
-        <!-- Hero Section -->
-        <div class=" hero ">
-            <div class="hero-text ">
-                <h1>
-                    Selamat datang di web kami
-                    <br> #1 Laundry terbaik se indonesia <br> Solusi Terbaik Untuk Keluarga dan Orang Tua
-                </h1>
-                <a href="formpesananlaundry.php" class="btn btn-outline-light"><b> Segera Pesan</b> </a>
-            </div>
-            <div class="produklaundry ">
-                <image src="image/fotoproduk.png " alt="Laundry Items ">
-            </div>
+    <!-- Hero Section -->
+    <div class=" hero ">
+        <div class="hero-text ">
+            <h1>
+                Selamat datang di web kami
+                <br> #1 Laundry terbaik se indonesia <br> Solusi Terbaik Untuk Keluarga dan Orang Tua
+            </h1>
+            <a href="formpesananlaundry.php" class="btn btn-outline-light"><b> Segera Pesan</b> </a>
         </div>
-        <div class="container mt-4">
-            <div class="row justify-content-end">
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="image/kegiatan.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p>
-                                <h4>mencuci</h4>
-                            </p>
-                            <p class="card-text">Kegiatan mencuci di laundry dimulai dengan penyortiran pakaian berdasarkan jenis kain dan warna, agar proses pencucian lebih aman. Setelah itu, pakaian dimasukkan ke dalam mesin cuci modern dengan penggunaan deterjen khusus
-                                yang ramah lingkungan.</p>
-                            <a href="#" class="btn-card btn btn-primary"> click</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="image/menyetrika.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p>
-                                <h4>menyetrika</h4>
-                            </p>
-                            <p class="card-text">Menyetrika adalah kegiatan merapikan pakaian dengan menggunakan setrika yang panas. Tujuannya untuk menghilangkan kusut pada kain sehingga pakaian terlihat rapi, halus, dan enak dipakai. Saat menyetrika, panas dari setrika
-                                membantu meluruskan serat kain yang kusut.</p>
-                            <a href="#" class="btn-card btn btn-primary"> click</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="image/packing.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p>
-                                <h4>menyiapkan barang</h4>
-                            </p>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn-card btn btn-primary"> click</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="image/kegiatan.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn-card btn btn-primary"> click</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="image/menyetrika.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn-card btn btn-primary"> click</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card" style="width: 18rem;">
-                        <img src="image/packing.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn-card btn btn-primary"> click</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="produklaundry ">
+            <image src="image/fotoproduk.png " alt="Laundry Items ">
         </div>
-        </div>
-        </div>
-        </div>
-        <footer class="bg-primary text-white mt-5 p-4">
-            <div class="container">
-                <div class="row text-center text-md-start">
-                    <!-- Kolom 1 -->
-                    <div class="col-md-4 mb-3">
-                        <h5>LaundryKu 🧺</h5>
+    </div>
+    <!-- awal card  -->
+    <div class="container mt-4">
+        <div class="row justify-content-end">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image/kegiatan.png" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <p>
-                            Layanan laundryKu dengan responsif, ramah, dan berkualitas tinggi. Kami berkomitmen untuk memberikan pengalaman laundry terbaik bagi pelanggan kami.
+                            <h4>mencuci</h4>
                         </p>
+                        <p class="card-text">bila barang sudah sampai kita akan langsung mencuci pakaian yang anda kirim kan dengan bersih dan teliti</p>
+
                     </div>
-                    <!-- Kolom 2 -->
-                    <div class="col-md-4 mb-3">
-                        <h5>Menu</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white text-decoration-none">Pesanan</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Testimoni</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Kemitraan</a></li>
-                        </ul>
-                    </div>
-                    <!-- Kolom 3 -->
-                    <div class="col-md-4 mb-3">
-                        <h5>Hubungi Kami</h5>
-                        <p>📍 Jl. Bersih No. 123, Jakarta</p>
-                        <p>📞 0812-3456-7890</p>
-                        <p>📧 laundryku@gmail.com</p>
-                        <div>
-                            <a href="#" class="text-white me-2">🌐</a>
-                            <a href="#" class="text-white me-2">📘</a>
-                            <a href="#" class="text-white me-2">📸</a>
-                            <a href="#" class="text-white">💬</a>
-                        </div>
-                    </div>
-                </div>
-                <hr class="border-light">
-                <div class="text-center">
-                    © 2025 LaundryKu. All Rights Reserved.
                 </div>
             </div>
-        </footer>
+
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image/menyetrika.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>
+                            <h4>menyetrika</h4>
+                        </p>
+                        <p class="card-text">Agar tidak terlihat kusut atau kurang rapih kita setrika terlebih dahulu sebelum dikirimkan</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image/packing.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>
+                            <h4>menyiapkan barang</h4>
+                        </p>
+                        <p class="card-text">Agar barang sampai tujuan dengan selamat kita packing dengan aman agar tidak membuat customers kecewa</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image/kegiatan.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image/menyetrika.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="image/packing.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- akhir card -->
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer class="bg-primary text-white mt-5 p-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Kolom 1 -->
+                <div class="col-md-4 mb-3">
+                    <h5>LaundryKu 🧺</h5>
+                    <p>
+                        Layanan laundryKu dengan responsif, ramah, dan berkualitas tinggi. Kami berkomitmen untuk memberikan pengalaman laundry terbaik bagi pelanggan kami.
+                    </p>
+                </div>
+                <!-- Kolom 2 -->
+                <div class="col-md-4 mb-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Pesanan</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Testimoni</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Kemitraan</a></li>
+                    </ul>
+                </div>
+                <!-- Kolom 3 -->
+                <div class="col-md-4 mb-3">
+                    <h5>Hubungi Kami</h5>
+                    <p>📍 Jl. Bersih No. 123, Jakarta</p>
+                    <p>📞 0812-3456-7890</p>
+                    <p>📧 laundryku@gmail.com</p>
+                    <div>
+                        <a href="#" class="text-white me-2">🌐</a>
+                        <a href="#" class="text-white me-2">📘</a>
+                        <a href="#" class="text-white me-2">📸</a>
+                        <a href="#" class="text-white">💬</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <div class="text-center">
+                © 2025 LaundryKu. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
 
 
 
 
 
-    </body>
+</body>
 
-    </html>
+</html>
