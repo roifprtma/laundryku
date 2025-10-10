@@ -38,8 +38,7 @@ $result = mysqli_query($conn, "SELECT * FROM customers");
             <th>Nama</th>
             <th>Alamat</th>
             <th>No HP</th>
-            <th>pesanan</th>
-            <th>Aksi</th>
+           <th>Aski</th>
         </tr>
         <?php while($row = mysqli_fetch_assoc($result)) { ?>
             <tr>
@@ -47,7 +46,7 @@ $result = mysqli_query($conn, "SELECT * FROM customers");
                 <td><?= $row['nama_user'] ?></td>
                 <td><?= $row['alamat'] ?></td>
                 <td><?= $row['no_hp'] ?></td>
-                <td><?= $row['pesanan'] ?></td>
+              
                 <td>
                     <a href="update.php?id=<?= $row['id_user'] ?>" class="btn btn-update">Update</a>
                     <a href="delete.php?id=<?= $row['id_user'] ?>" class="btn btn-delete" onclick="return confirm('Yakin ingin menghapus data ini?')">Delete</a>

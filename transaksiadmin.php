@@ -7,7 +7,7 @@ if (!$conn) {
 }
 
 // Ambil data pesanan
-$query = "SELECT * FROM layananlaundry ORDER BY id_pesanan DESC";
+$query = "SELECT * FROM layananlaundry ORDER BY id DESC";
 $result = mysqli_query($conn, $query);
 ?>
 
@@ -46,7 +46,7 @@ $result = mysqli_query($conn, $query);
             <th>Berat (Kg)</th>
             <th>Total (Rp)</th>
             <th>Tgl Pesan</th>
-            <th>Estimasi</th>
+            <th>Telepon</th>
             <th>Status</th>
             <th>Update</th>
           </tr>
@@ -60,10 +60,10 @@ $result = mysqli_query($conn, $query);
                   echo "<td>".$no++."</td>";
                   echo "<td>".$row['nama_pelanggan']."</td>";
                   echo "<td>".$row['layanan']."</td>";
-                  echo "<td>".$row['Berat']."</td>";
+                  echo "<td>".$row['berat']."</td>";
                   echo "<td>".number_format($row['total'],0,',','.')."</td>";
                   echo "<td>".$row['tgl_pesanan']."</td>";
-                  echo "<td>".$row['estimasi']."</td>";
+                  echo "<td>".$row['telepon']."</td>";
                   echo "<td>
                           <span class='badge ";
                           if($row['status'] == 'Proses'){ echo "bg-warning text-dark"; }
@@ -73,9 +73,9 @@ $result = mysqli_query($conn, $query);
                           echo "'>".$row['status']."</span>
                         </td>";
                   echo "<td>
-                          <a href='detail.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-info'>Detail</a>
-                          <a href='edit.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-warning'>Edit</a>
-                          <a href='hapus.php?id=".$row['id_pesanan']."' class='btn btn-sm btn-danger' onclick='return confirm(\"Yakin hapus pesanan ini?\")'>Hapus</a>
+                          <a href='detail.php?id=".$row['id']."' class='btn btn-sm btn-info'>Detail</a>
+                          <a href='edit.php?id=".$row['id']."' class='btn btn-sm btn-warning'>Edit</a>
+                          <a href='hapus.php?id=".$row['id']."' class='btn btn-sm btn-danger' onclick='return confirm(\"Yakin hapus pesanan ini?\")'>Hapus</a>
                         </td>";
                   echo "</tr>";
               }

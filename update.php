@@ -1,4 +1,3 @@
-
 <?php
 include "serverLK.php"; // koneksi ke db
 
@@ -22,11 +21,9 @@ if (isset($_POST['update'])) {
     $nama     = $_POST['nama_user'];
     $alamat   = $_POST['alamat'];
     $no_hp    = $_POST['no_hp'];
-    $pesanan    = $_POST['pesanan'];
 
-    // update data
     $sql = "UPDATE customers 
-            SET nama_user='$nama', alamat='$alamat', no_hp='$no_hp', pesanan='$pesanan' 
+            SET nama_user='$nama', alamat='$alamat', no_hp='$no_hp' 
             WHERE id_user='$id'";
 
     if (mysqli_query($conn, $sql)) {
@@ -41,36 +38,33 @@ if (isset($_POST['update'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <title>Update Data Pelanggan</title>
-    <style>
-        body {font-family: Arial; margin: 10px;}
-        form {max-width: 400px; margin: auto;}
-        label {display: block; margin-top: 10px;}
-        input {width: 100%; padding: 8px; margin-top: 5px;}
-        button {margin-top: 15px; padding: 10px; width: 100%;
-                background: #1b61b1; color: white; border: none; border-radius: 5px;}
-        button:hover {background: #0d47a1;}
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="update.css">
+
 </head>
 <body>
-    <h2>✏️ Update Data Pelanggan</h2>
-    <form method="POST">
-        <input type="hidden" name="id_user" value="<?= $row['id_user'] ?>">
+    <div class="form-container">
+        <div class="icon">✏️</div>
+        <h2>Update Data Pelanggan</h2>
+        <form method="POST">
+            <input type="hidden" name="id_user" value="<?= $row['id_user'] ?>">
 
-        <label>Nama</label>
-        <input type="text" name="nama_user" value="<?= $row['nama_user'] ?>" required>
+            <label>Nama</label>
+            <input type="text" name="nama_user" value="<?= $row['nama_user'] ?>" required>
 
-        <label>Alamat</label>
-        <input type="text" name="alamat" value="<?= $row['alamat'] ?>" required>
+            <label>Alamat</label>
+            <input type="text" name="alamat" value="<?= $row['alamat'] ?>" required>
 
-        <label>No HP</label>
-        <input type="text" name="no_hp" value="<?= $row['no_hp'] ?>" required>
+            <label>No HP</label>
+            <input type="text" name="no_hp" value="<?= $row['no_hp'] ?>" required>
 
-        <label>pesanan</label>
-        <input type="text" name="pesanan" value="<?= $row['pesanan'] ?>" required>
-
-        <button type="submit" name="update">Simpan Perubahan</button>
-    </form>
+            <button type="submit" name="update">💾 Simpan Perubahan</button>
+        </form>
+        <div class="note">Pastikan data pelanggan sudah benar sebelum disimpan.</div>
+    </div>
 </body>
+</html>
