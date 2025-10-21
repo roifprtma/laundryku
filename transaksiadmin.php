@@ -26,7 +26,7 @@ $result = mysqli_query($conn, $query);
   <div class="container-fluid">
     <a class="navbar-brand" href="#">LaundryKu - Admin</a>
     <div class="d-flex">
-      <a href="tambah_pesanan.php" class="btn btn-success me-2">+ Tambah Pesanan</a>
+      <a href="tambah_pesanan.php" class="btn btn-primary me-2">+ Tambah Pesanan</a>
       <a href="logout.php" class="btn btn-outline-light">Logout</a>
     </div>
   </div>
@@ -73,9 +73,9 @@ $result = mysqli_query($conn, $query);
                           echo "'>".$row['status']."</span>
                         </td>";
                   echo "<td>
-                          <a href='detail.php?id=".$row['id']."' class='btn btn-sm btn-info'>Detail</a>
-                          <a href='edit.php?id=".$row['id']."' class='btn btn-sm btn-warning'>Edit</a>
-                          <a href='hapus.php?id=".$row['id']."' class='btn btn-sm btn-danger' onclick='return confirm(\"Yakin hapus pesanan ini?\")'>Hapus</a>
+                        
+                          <a href='updatetransaksi/update.php?id=".$row['id']."' class='btn btn-sm btn-warning'>Edit</a>
+                          <a href='updatetransaksi/delete.php?id=".$row['id']."' class='btn btn-sm btn-danger' onclick='return confirm(\"Yakin hapus pesanan ini?\")'>Hapus</a>
                         </td>";
                   echo "</tr>";
               }

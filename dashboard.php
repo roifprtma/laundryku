@@ -2,7 +2,7 @@
 include "serverLK.php";
 
 $jml_layanan = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM layananlaundry"))['total'];
-$jml_customer = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM customers"))['total'];
+$jml_customer = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM layananlaundry"))['total'];
 $jml_paket = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) as total FROM paket_laundry"))['total'];
 $jml_pemasukan = mysqli_fetch_assoc(mysqli_query($conn, "SELECT SUM(total) as total FROM layananlaundry"))['total'];
 
@@ -23,7 +23,7 @@ $result = mysqli_query($conn, "SELECT * FROM layananlaundry");
 <body>
   <div class="navbar">
     <span class="toggle-btn" onclick="toggleSidebar()">☰ Menu</span>
-    <h5 class="mb-0">Dashboard Admin LaundryKu</h5>
+    <h5 class="mb-0"><b>Dashboard Admin LaundryKu</b></h5>
   </div>
 
   <div class="sidebar" id="sidebar">
@@ -38,32 +38,32 @@ $result = mysqli_query($conn, "SELECT * FROM layananlaundry");
       <div class="row text-white mb-4">
         <div class="col-md-3">
           <div class="card bg-primary shadow rounded-3">
-            <div class="card-body text-center">
-              <h5>Layanan</h5>
+            <div class="card-body text-center text-white">
+              <h5><b>Paket</b></h5>
               <h3><?= $jml_layanan ?></h3>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card bg-success shadow rounded-3">
-            <div class="card-body text-center">
-              <h5>Pelanggan</h5>
+          <div class="card bg-primary shadow rounded-3">
+            <div class="card-body text-center text-white">
+              <h5><b>Pelanggan</b></h5>
               <h3><?= $jml_customer ?></h3>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card bg-info shadow rounded-3">
+          <div class="card bg-primary shadow rounded-3 text-white">
             <div class="card-body text-center">
-              <h5>Paket</h5>
+              <h5><b>Paket</b></h5>
               <h3><?= $jml_paket ?></h3>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card bg-warning shadow rounded-3">
+          <div class="card bg-primary shadow rounded-3 text-white">
             <div class="card-body text-center">
-              <h5>Pemasukan</h5>
+              <h5><b>pemasukan</b></h5>
               <h3>Rp <?= number_format($jml_pemasukan,0,',','.') ?></h3>
             </div>
           </div>
